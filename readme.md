@@ -1,6 +1,8 @@
 <h1>Overview</h1>
 <p>[project_reactnative_todo.png]</p>
 
+![project_reactnative_todo](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/84ad3a53-f001-480e-af06-c8941765985d)
+
 
 
 <h1>Project Introduction</h1>
@@ -82,7 +84,8 @@ npm install -g expo-cli
 expo init frontend ->blank managed flow
 npm start
 </pre>
-
+<h2>&#x270f;ScrollView vs FlatList </h2>
+<p>FlatList give better performance for dynamic list, as it doesnt render all list items at once, list items are only rendered during scrolling</p>
 <h2>&#x270f;Using dotenv in REACT NATIVE</h2>
 <ol>
 <li>Install react-native-dotenv dependency</li>
