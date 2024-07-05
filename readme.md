@@ -75,7 +75,7 @@
 <p>[delete2.png]</p>
 
 ![delete2](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/70e4083d-6e2f-4df1-9c23-ce140e2eeabe)
-<h1>&#xe301;Development Memos</h1>
+<h1>&#128221;Development Memos</h1>
 <h2>&#x270f;How we Create new react native Pj </h2>
 <pre>
 npm install -g expo-cli
