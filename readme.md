@@ -35,13 +35,13 @@
 <li>Basic CRUD operation</li>
 </ul>
 
-<h1>&#x1F4F7;Screenshots</h1>
-<h2>	&#x1F48E;Read</h2>
+<h1>	&#x1F4F8;Screenshots</h1>
+<h2>		&#x1F5BC;Read</h2>
 <p>[read1.png]</p>
 
 ![read1](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/bef60096-9905-4373-bf85-09d31455affd)
 
-<h2>	&#x1F48E;Create</h2>
+<h2>		&#x1F5BC;Create</h2>
 <p>[create1.png]</p>
 
 ![create1](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/e9cb7e53-5459-48ac-9bc8-401a8110c583)
@@ -57,7 +57,7 @@
 <p>[create3.png]</p>
 
 ![create3](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/d6c46d5f-c4d2-4ea5-b073-9445acb49f6d)
-<h2>	&#x1F48E;Update</h2>
+<h2>		&#x1F5BC;Update</h2>
 <p>[update1.png]</p>
 
 ![update1](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/0e51c644-1afc-4787-9c1a-9b683a1f5e96)
@@ -69,7 +69,7 @@
 <p>[update3.png]</p>
 
 ![update3](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/2c0b5d6b-c9bb-4fd6-92a6-e586a082b832)
-<h2>	&#x1F48E;Delete</h2>
+<h2>		&#x1F5BC;Delete</h2>
 <p>[delete1.png]</p>
 
 ![delete1](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/f52ebd6d-ef78-4dd9-ba8e-b0be4a366a02) 
