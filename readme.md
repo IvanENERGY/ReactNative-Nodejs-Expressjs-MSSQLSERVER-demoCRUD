@@ -77,15 +77,19 @@
 <p>[delete2.png]</p>
 
 ![delete2](https://github.com/IvanENERGY/ReactNative-Nodejs-Expressjs-MSSQLSERVER-demoCRUD/assets/90034836/70e4083d-6e2f-4df1-9c23-ce140e2eeabe)
+<!-- ------------------------------------------------------------------------ -->
 <h1>&#128221;Development Memos</h1>
+<!-- ------------------------------------------------------------------------ -->
 <h2>&#x270f;How we Create new react native Pj </h2>
 <pre>
 npm install -g expo-cli
 expo init frontend ->blank managed flow
 npm start
 </pre>
+<!-- ------------------------------------------------------------------------ -->
 <h2>&#x270f;ScrollView vs FlatList </h2>
 <p>FlatList give better performance for dynamic list, as it doesnt render all list items at once, list items are only rendered during scrolling</p>
+<!-- ------------------------------------------------------------------------ -->
 <h2>&#x270f;Using dotenv file in REACT NATIVE (&#xFE0F;No need to install any dependency)</h2>
 <h3>For app testing within expoGo App</h3>
 <ol>
@@ -93,16 +97,17 @@ npm start
 <pre>
 EXPO_PUBLIC_BACKEND_URL=http://192.168.1.6:3000
 </pre>
-<li>Call <code>process.env.EXPO_PUBLIC_BACKEND_URL</code> directly in code </li>
+<li>Call <code>process.env.EXPO_PUBLIC_BACKEND_URL</code> directly in react native code </li>
 </ol>
 
 <h3>For built Application</h3>
-<p>configure eas.json : </p>
-<pre>add  "env": {"EXPO_PUBLIC_BACKEND_URL":"http://192.168.1.6:3000"} </pre>
+<p>add "env" to eas.json : </p>
+<pre>"env": {"EXPO_PUBLIC_BACKEND_URL":"http://192.168.1.6:3000"} </pre>
 
 
-
+<!-- ------------------------------------------------------------------------ -->
 <h1>&#128640;How to deploy application as APK </h1>
+<!-- ------------------------------------------------------------------------ -->
 <h2>&#x1F69A;Make sure the built app can connect the Internet</h2>
 <ol>
 <li>Install expo-build properties</li>
@@ -122,6 +127,7 @@ npx expo install expo-build-properties
     ]
 </pre>
 </ol>
+<!-- ------------------------------------------------------------------------ -->
 <h2>&#x1F69A;Configure the eas build file </h2>
 <ol>
 <li>Install eas cli</li>
@@ -131,25 +137,25 @@ npx expo install expo-build-properties
 <li>Then add the eas.json file</li>
 <pre>
 {
-    "build": {
-        "dev": {
-            "android": {
-                "buildType": "apk"
-            },
-            "ios": {
-                "buildConfiguration": "Debug"
-            },
-            "env": {
-              "EXPO_PUBLIC_BACKEND_URL": "http://192.168.1.6:3000"
-            }
-
-        },
-        "preview": {},
-        "prod": {}
-}
+  "build": {
+      "dev": {
+          "android": {
+              "buildType": "apk"
+          },
+          "ios": {
+              "buildConfiguration": "Debug"
+          },
+          "env": {
+            "EXPO_PUBLIC_BACKEND_URL": "http://192.168.1.6:3000"
+          }
+      },
+      "preview": {},
+      "prod": {}
+  }
 }
 </pre>
 </ol>
+<!-- ------------------------------------------------------------------------ -->
 <h2>&#x1F69A;Finally we can run the build command to build the APK </h2>
 <code>eas build -p android --profile dev</code>
 <p>Download the apk from expo website https://expo.dev/</p>
