@@ -2,7 +2,7 @@
 import { Button, StyleSheet, Text, View ,Alert} from 'react-native';
 import { useState } from 'react';
 import axios from 'axios';
-import {BACKEND_URL} from "@env"
+
 import { UpdateTaskModal } from './UpdateTaskModal';
 //LAYOUT OF ONE TASK
 export const Task=(props)=>{
@@ -23,7 +23,7 @@ export const Task=(props)=>{
                 text: 'OK', 
                 onPress: () => {
                     //APICALL
-                    axios.delete(`${BACKEND_URL}/api/tasks/${props.task.id}/delete`)
+                    axios.delete(`${process.env.EXPO_PUBLIC_BACKEND_URL}/api/tasks/${props.task.id}/delete`)
                     .then((response)=>{
                         if(response.data.data.rowsAffected){
                             showOKAlert('RowsAffected',String(response.data.data.rowsAffected));

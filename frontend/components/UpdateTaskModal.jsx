@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { Button, Modal, StyleSheet, Text, TextInput, View ,Image,Alert} from 'react-native';
 import axios from 'axios';
-import {BACKEND_URL} from "@env"
+
 
 export const UpdateTaskModal=(props)=>{
     const [taskName,setTaskName]=useState("");
@@ -32,7 +32,7 @@ export const UpdateTaskModal=(props)=>{
             filePath
         }
         //APICALL
-        axios.put(`${BACKEND_URL}/api/tasks/${props.task.id}/update`,data)
+        axios.put(`${process.env.EXPO_PUBLIC_BACKEND_URL}/api/tasks/${props.task.id}/update`,data)
         .then((response)=>{
             if(response.data.data.rowsAffected){
                 showOKAlert('RowsAffected',String(response.data.data.rowsAffected));

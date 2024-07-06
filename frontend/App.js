@@ -3,7 +3,6 @@ import { Button, FlatList, ScrollView, StyleSheet, Text, View } from 'react-nati
 
 import { useState,useEffect } from 'react';
 import axios from 'axios';
-import {BACKEND_URL} from "@env"
 import { CreateTaskModal } from './components/CreateTaskModal';
 import { Task } from './components/TaskComponent';
 
@@ -16,7 +15,7 @@ export default function App() {
 
 
   useEffect(()=>{
-    axios.get(`${BACKEND_URL}/api/tasks`)
+    axios.get(`${process.env.EXPO_PUBLIC_BACKEND_URL}/api/tasks`)
     .then((response)=>{
        setLiTasks(response.data.data);
        setLoading(false);
@@ -40,7 +39,7 @@ export default function App() {
       
       <View style={styles.taskContainer}>
         {/* <Task title="HI" deadline="2023-12-1" reps="3" filePath="fwfww.png"/>      */}
-        {isLoading?<Text style={{backgroundColor:'red', fontSize:50}}>Loading...</Text>:
+        {isLoading?<Text style={{backgroundColor:'red', fontSize:50}}>Loading... {process.env.EXPO_PUBLIC_BACKEND_URL} </Text>:
         // <ScrollView>
         // {liTasks.map(item=>{
         //   return  <Task key={item.id} task={item} />

@@ -86,62 +86,68 @@ npm start
 </pre>
 <h2>&#x270f;ScrollView vs FlatList </h2>
 <p>FlatList give better performance for dynamic list, as it doesnt render all list items at once, list items are only rendered during scrolling</p>
-<h2>&#x270f;Using dotenv in REACT NATIVE</h2>
+<h2>&#x270f;Using dotenv file in REACT NATIVE (&#xFE0F;No need to install any dependency)</h2>
 <ol>
-<li>Install react-native-dotenv dependency</li>
+
+<li>add .env file (Prefix must start with EXPO_PUBLIC_)</li>
 <pre>
-npm install react-native-dotenv
+EXPO_PUBLIC_BACKEND_URL=http://192.168.1.6:3000
 </pre>
-<li>add the .babelrc file</li>
+
+<li>Call <code>process.env.EXPO_PUBLIC_BACKEND_URL</code> directly in code </li>
+<li>for building the application:  configure eas.json as well: add  "env": {"EXPO_PUBLIC_BACKEND_URL":"http://192.168.1.6:3000"}</li>
+</ol>
+
+
+<h1>&#128640;How to deploy application as APK </h1>
+<h2>&#x1F69A;Make sure the built app can connect the Internet</h2>
+<ol>
+<li>Install expo-build properties</li>
 <pre>
-{
-    "plugins": [
-       [
-          "module:react-native-dotenv",
-          {
-             "moduleName": "@env",
-             "path": ".env",
-             "blacklist": null,
-             "whitelist": null,
-             "safe": false,
-             "allowUndefined": true
-          }
-       ]
+npx expo install expo-build-properties
+</pre>
+<li>Change plugin attribute in app.json</li>
+<pre>
+"plugins": [
+      ["expo-build-properties", {
+        "android": {
+          "usesCleartextTraffic": true
+        },
+        "ios": {
+        }
+      }]
     ]
- }
-</pre>
-<li>Use it in react native code</li>
-<pre>
-import {BACKEND_URL} from "@env" 
-console.log(BACKEND_URL)
 </pre>
 </ol>
-<h1>&#128640;How to deploy application as APK </h1>
+<h2>&#x1F69A;Configure the eas build file </h2>
 <ol>
 <li>Install eas cli</li>
 <code>npm install -g eas-cli</code>
 <li>Login to expo</li>
 <code>expo login</code>
-<li>Then configure the eas.json file</li>
+<li>Then add the eas.json file</li>
 <pre>
 {
     "build": {
-        "development": {
+        "dev": {
             "android": {
                 "buildType": "apk"
             },
             "ios": {
                 "buildConfiguration": "Debug"
+            },
+            "env": {
+              "EXPO_PUBLIC_BACKEND_URL": "http://192.168.1.6:3000"
             }
+
         },
-        "preview": {
-            
-        },
-        "production": {}
-    }
+        "preview": {},
+        "prod": {}
+}
 }
 </pre>
-<li>Run build command</li>
-<code>eas build -p android --profile development</code>
-<li>Download the apk from expo website https://expo.dev/</li>
 </ol>
+<h2>&#x1F69A;Finally we can run the build command to build the APK </h2>
+<code>eas build -p android --profile dev</code>
+<p>Download the apk from expo website https://expo.dev/</p>
+

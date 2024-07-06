@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Button, Modal, StyleSheet, Text, TextInput, View ,Image,Alert} from 'react-native';
 import axios from 'axios';
-import {BACKEND_URL} from "@env"
+
 
 export const CreateTaskModal=(props)=>{
     const [taskName,setTaskName]=useState("");
@@ -25,7 +25,7 @@ export const CreateTaskModal=(props)=>{
             filePath
         }
         //APICALL
-        axios.post(`${BACKEND_URL}/api/tasks`,data)
+        axios.post(`${process.env.EXPO_PUBLIC_BACKEND_URL}/api/tasks`,data)
         .then((response)=>{
             if(response.data.data.rowsAffected){
                 showOKAlert('RowsAffected',String(response.data.data.rowsAffected));
