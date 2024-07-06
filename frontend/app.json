@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "frontend",
+    "name": "To-Do List",
     "slug": "frontend",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon_todo_2.png",
+    "icon": "./assets/icon_todoapp.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash_todo.png",
+      "image": "./assets/splash_todoapp.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,7 +16,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon_todo_2.png",
+        "foregroundImage": "./assets/adaptive-icon_todoapp.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.ivanchantf.todofrontend"

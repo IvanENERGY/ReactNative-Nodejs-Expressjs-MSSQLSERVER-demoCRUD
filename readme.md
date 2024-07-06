@@ -104,11 +104,12 @@ EXPO_PUBLIC_BACKEND_URL=http://192.168.1.6:3000
 <p>add "env" to eas.json : </p>
 <pre>"env": {"EXPO_PUBLIC_BACKEND_URL":"http://192.168.1.6:3000"} </pre>
 
-<h2>&#x270f;Change app icon </h2>
-<p>There are two places in app.json we need to change</p>
+<h2>&#x270f;Change app icon & splash</h2>
+<h3>ICON</h3>
 <pre>   
 "icon": "./assets/icon_todo.png"
 </pre>
+<h3>Adaptive ICON</h3>
 <pre>
 "android": {
   "adaptiveIcon": {
@@ -118,7 +119,24 @@ EXPO_PUBLIC_BACKEND_URL=http://192.168.1.6:3000
   "package": "com.ivanchantf.todofrontend"
 },
 </pre>
-<p>Any icon size should be 1024x1024, and overlaying template icon undernearth when producing the real icon is recommended</p>
+<h3>Splash</h3>
+<pre>
+"splash": {
+  "image": "./assets/splash_todoapp.png",
+  "resizeMode": "contain",
+  "backgroundColor": "#ffffff"
+},
+</pre>
+<hr>
+<p>Icon size should be 1024x1024, </p>
+<p>Adaptive Icon size should be 1024x1024</p>
+<p>Splash size should be 1284x2778</p>
+<hr>
+ <p>overlaying template icon undernearth when producing icon is recommended</p>
+ <p>using icon further for producing adaptive icon & splash is recommended </p>
+ <!-- ------------------------------------------------------------------------ -->
+ <h2>&#x270f;Change app name</h2>
+ <p>Just change the "name" in app.json</p>
 <!-- ------------------------------------------------------------------------ -->
 <h1>&#128640;How to deploy application as APK </h1>
 <!-- ------------------------------------------------------------------------ -->

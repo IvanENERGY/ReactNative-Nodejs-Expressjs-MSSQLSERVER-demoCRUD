@@ -11,8 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5014d6b8-f019-4336-a90a-97e648f26302" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../frontend/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/assets/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/assets/splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/assets/icon_todo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/assets/splash_todo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../readme.md" afterDir="false" />
     </list>
