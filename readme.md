@@ -87,16 +87,19 @@ npm start
 <h2>&#x270f;ScrollView vs FlatList </h2>
 <p>FlatList give better performance for dynamic list, as it doesnt render all list items at once, list items are only rendered during scrolling</p>
 <h2>&#x270f;Using dotenv file in REACT NATIVE (&#xFE0F;No need to install any dependency)</h2>
+<h3>For app testing within expoGo App</h3>
 <ol>
-
 <li>add .env file (Prefix must start with EXPO_PUBLIC_)</li>
 <pre>
 EXPO_PUBLIC_BACKEND_URL=http://192.168.1.6:3000
 </pre>
-
 <li>Call <code>process.env.EXPO_PUBLIC_BACKEND_URL</code> directly in code </li>
-<li>for building the application:  configure eas.json as well: add  "env": {"EXPO_PUBLIC_BACKEND_URL":"http://192.168.1.6:3000"}</li>
 </ol>
+
+<h3>For built Application</h3>
+<p>configure eas.json : </p>
+<pre>add  "env": {"EXPO_PUBLIC_BACKEND_URL":"http://192.168.1.6:3000"} </pre>
+
 
 
 <h1>&#128640;How to deploy application as APK </h1>
