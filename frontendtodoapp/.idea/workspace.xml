@@ -10,12 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5014d6b8-f019-4336-a90a-97e648f26302" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/components/CreateTaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/components/CreateTaskModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/components/TaskComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/components/TaskComponent.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/components/UpdateTaskModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/components/UpdateTaskModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/assets/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/assets/splash.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../readme.md" afterDir="false" />
     </list>
@@ -24,7 +21,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\user\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\user\.android\avd\Pixel_C_API_34.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />

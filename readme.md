@@ -104,7 +104,21 @@ EXPO_PUBLIC_BACKEND_URL=http://192.168.1.6:3000
 <p>add "env" to eas.json : </p>
 <pre>"env": {"EXPO_PUBLIC_BACKEND_URL":"http://192.168.1.6:3000"} </pre>
 
-
+<h2>&#x270f;Change app icon </h2>
+<p>There are two places in app.json we need to change</p>
+<pre>   
+"icon": "./assets/icon_todo.png"
+</pre>
+<pre>
+"android": {
+  "adaptiveIcon": {
+    "foregroundImage": "./assets/icon_todo.png",
+    "backgroundColor": "#ffffff"
+  },
+  "package": "com.ivanchantf.todofrontend"
+},
+</pre>
+<p>Any icon size should be 1024x1024, and overlaying template icon undernearth when producing the real icon is recommended</p>
 <!-- ------------------------------------------------------------------------ -->
 <h1>&#128640;How to deploy application as APK </h1>
 <!-- ------------------------------------------------------------------------ -->
